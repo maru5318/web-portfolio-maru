@@ -4,8 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
     <title>Document</title>
     <link rel="stylesheet" href="./assets/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <img
@@ -19,7 +24,504 @@
       class="page-bg-icon page-bg-icon-rb"
     />
     <div class="page-cover bg-3 text-dark">
-      <h1 class="page-title text-1">Portfolio</h1>
+      <h1 class="page-title text-1" style="color: #004d40">Portfolio</h1>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">English Title</div>
+          <div class="card-subtitle">日本語タイトル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">内容</div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Self-Introduction</div>
+          <div class="card-subtitle">自己紹介</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="card-basic-info-layout">
+            <div class="card-photo">
+              <img src="./assets/me2.png" alt="顔写真" class="my-photo" />
+            </div>
+            <div style="flex-grow: 1">
+              <div style="display: flex; gap: 1em; align-items: flex-end">
+                <h3 style="margin: 0; font-size: 2rem">金子 力丸</h3>
+                <span style="padding-bottom: 4px">かねこ りきまる</span>
+              </div>
+              <div class="bg-2" style="height: 2px"></div>
+              <div class="text-2" style:font-size="0.95rem">
+                Rikimaru Kaneko
+              </div>
+              <div
+                class="text-1"
+                style="display: flex; gap: 0.5em; align-items: center"
+              >
+                <img src="./assets/icons/email.svg" alt="Emailのアイコン" />
+                <span>ne201082[at]senshu-u.jp</span>
+              </div>
+              <div>
+                専修大学 ネットワーク情報学部 ネットワーク情報学科 3年生
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-contents">
+          <span class="card-basic-info-label bg-1 text-light">自己紹介</span>
+          <p>
+            はじめまして、金子 力丸
+            と言います。このサイトは、私の趣味やスキルなどを紹介するポートフォリオです。
+            このポートフォリオが、webの初めての制作物です。どうぞご覧ください。
+          </p>
+          <span class="card-basic-info-label bg-1 text-light">重要</span>
+          <p>このページは制作途中です。</p>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="app-bar">
+        <div class="app-bar-title">MENU</div>
+        <div class="app-bar-button-cover">
+          <button onclick="scoller('#hobby')">趣味</button>
+          <button onclick="scoller('#skill')">スキル</button>
+          <button onclick="scoller('#mywork')">制作物</button>
+          <button onclick="scoller('#licence')">帰属</button>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="hobby">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Hobby</div>
+          <div class="card-subtitle">趣味</div>
+          <div class="card-title-lines"></div>
+        </h2>
+        <div class="card-contents">
+          旅行と写真を撮ることが趣味です。スマートフォンで気軽に撮影したものです。
+          パノラマ撮影が気に入っています。
+        </div>
+        <div
+          class="swiper-area"
+          style="
+            --swiper-navigation-color: #fff;
+            --swiper-pagination-color: #fff;
+          "
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-title">静岡県 熱海市 熱海城前</div>
+              <img src="./assets/photos/1.jpg" alt="静岡県 熱海市 熱海城前" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">夕方の大学</div>
+              <img
+                src="./assets/photos/2.jpg"
+                alt="夕方の大学"
+                style="width: auto"
+              />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">高知県 四万十川 沈下橋</div>
+              <img src="./assets/photos/3.jpg" alt="高知県 四万十川 沈下橋" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">石川県 能登半島 聖域の岬</div>
+              <img src="./assets/photos/4.jpg" alt="石川県 能登半島 聖域の岬" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">長野県 軽井沢町 白糸の滝</div>
+              <img src="./assets/photos/5.jpg" alt="長野県 軽井沢町 白糸の滝" />
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-title">新潟県 糸魚川 白馬大仏前</div>
+              <img src="./assets/photos/6.jpg" alt="新潟県 糸魚川 白馬大仏前" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="skill">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Skill</div>
+          <div class="card-subtitle">スキル</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents tile-grid-cover">
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <img
+                src="./assets/logos/html5.png"
+                width="80%"
+                alt="HTML5 Powered with CSS3 / Styling"
+              />
+              <span>HTML / CSS</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　Web のフロントサイドの言語です。
+              大学の講義では基礎的な内容の学習だったため、学習サイト等で学び
+              ポートフォリオサイトを作成しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <img
+                src="./assets/logos/nodejs.svg"
+                alt="Node.jsロゴ"
+                width="80"
+              />
+              <span>JavaScript / Node.js</span>
+              <small>4ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　Web 系で最も有名な言語です。
+              フロントサイドでは、動きのある動作を作るために使用しました。
+              Node.js は、大学では学習しなかったため、本や学習サイトで学び
+              予約サイトのwebサービスの作成に用いました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <img src="./assets/logos/php.png" alt="PHPロゴ" />
+              <span>PHP</span>
+              <small>3ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　Web のサーバーサイドの言語です。学習サイトで学び、Laravel
+              というフレームワークで
+              データベースを操作する、アプリケーションを制作しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>MySQL</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　データベースです。 少しリレーションが必要な
+              クエリを使用するときに思うようにいかず、苦戦しています。 SQLlite
+              等の他のデータベースも挑戦しようと思っています。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Python</span>
+              <small>2年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義中心に学習しました。 sk-learn
+              を使った機械学習を行いました。他には、Gurobiで線形計画法を用いて
+              数理最適化問題を解くなどをしてきました。
+              また、セキュリティの学習をし、honey potの作成も行いました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Java</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で学習しました。
+              再帰問題などを解きながら基礎的な内容を学びました。
+              最終的に、複数のクライアントによるチャットアプリを作成しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Ruby on rails</span>
+              <small>1年</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で学習しました。
+              Webアプリの開発の学習で基礎から応用まで学び、電話帳やブログ投稿アプリを作成しました。
+              また、個人で映画の予約サイトを作成しました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>R</span>
+              <small>6ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　大学の講義で学習しました。
+              分析学習や、スクレイピング学習を主にしました。
+              スクレイピング学習では、TwitterのAPIを使い、Twitterからの情報をもとに、
+              分析を行うなどの学習をしました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>C#</span>
+              <small>6ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　大学でのテーマ実習という講義で学習しました。
+              Unityで自作ゲームを作る際にScriptの記述で扱いました。
+              独特の書き方で慣れるまで時間がかかりました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Go</span>
+              <small>6ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　こちらも大学のテーマ実習という講義で学習しました。
+              Unityのゲームで複数のクライアントによるリアルタイムでのゲームを実装するために
+              サーバー側の記述に用いました。
+            </div>
+          </div>
+
+          <div class="card-tile">
+            <div class="card-tile-title">
+              <span>Adobe Illustrator</span>
+              <small>6ヶ月</small>
+            </div>
+            <div class="card-tile-text">
+              　大学での講義で学習しました。
+              基礎的な学習から始めて、最終的にA4一枚のレシピ本のデザインを行いました。
+              講義後もwebサイトでのデザインの作成などを行いました。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="mywork">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">My Work</div>
+          <div class="card-subtitle">制作物</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <div class="work">
+            <div class="work-title">1. ポートフォリオサイト</div>
+            <div class="work-image">
+              <img src="./assets/works/work1.png" alt="ポートフォリオ" />
+            </div>
+            <div class="work-text">
+              <p>
+                　現在表示しているサイトです。
+                学習サイトを参考にしながら、制作しました。 初めて自分の手で Web
+                ページを作成することを知りました。
+              </p>
+
+              <small>こだわりのポイント</small>
+              <ul>
+                <li>
+                  <div>配色</div>
+                  柔らかい印象を持っていただけるように、ベースとなる色を、
+                  色の参考書から 3 色選択し、使用しました。
+                </li>
+                <li>
+                  <div>ナビゲーション</div>
+                  スマートフォン等、小さい画面で見たときに、セクションの移動が
+                  簡単にできるように、メニューを上部に固定しました。
+                  スクロールするまでは、ページの一部になるようにする部分に苦戦しました。
+                </li>
+                <li>
+                  <div>レスポンシブレイアウト</div>
+                  画面幅に応じてレイアウトが変わるようにし、崩れないように細かい部分まで調整しました。
+                </li>
+              </ul>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>
+                  <a
+                    href="https://swiperjs.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Swiper</a
+                  >
+                  <small>(画像スライドショー)</small>
+                </li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://developer.mozilla.org/ja/docs/Web/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    MDN
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-title">2. 匿名掲示板</div>
+            <div class="work-image">
+              <video controls autoplay muted loop>
+                <source src="./assets/works/work2.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support embedded videos.
+              </video>
+            </div>
+            <div class="work-text">
+              <p>
+                　サーバーサイドの練習のために、
+                誰でも利用可能な掲示板を作成しました。
+                書き込みをデータベースに保存し、他のユーザーからも閲覧できるようにしました。
+              </p>
+
+              <small>こだわりのポイント</small>
+              <ul>
+                <li>
+                  <div>投稿内容</div>
+                  自由なニックネームと投稿内容の 2 つだけのシンプルな構成です。
+                </li>
+                <li>
+                  <div>コンテナ化</div>
+                  Docker で PHP と MySQL を実行できるように構成しました。
+                </li>
+              </ul>
+
+              <small>実装したいこと</small>
+              <ul>
+                <li>
+                  <div>ログイン機能</div>
+                  誰でも削除できてしまうため、ログイン機能やパスワード保護機能で投稿を管理できるようにしたいです。
+                </li>
+              </ul>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="work">
+            <div class="work-title">3. To Do アプリ</div>
+            <div class="work-image">
+              <img src="./assets/works/work3.png" alt="To Do アプリ" />
+            </div>
+            <div class="work-text">
+              <p>
+                　PHP フレームワークの Laravel を使用して To Do
+                アプリを作成しました。
+                ログイン機能があり、ユーザーごとにタスクを管理できます。
+                シンプルな Web
+                アプリケーションですが、初期生成されたファイルが多く、大変でした。
+              </p>
+
+              <small>使用した言語・ツール等</small>
+              <ul>
+                <li>HTML / CSS</li>
+                <li>PHP</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>Docker</li>
+              </ul>
+
+              <small>参考にしたサイト</small>
+              <ul>
+                <li>
+                  <a
+                    href="https://techselect-study.careerselect.jp/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Tech Select 学習サイト
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height: 20px"></div>
+
+      <div class="card-cover bg-white" id="licence">
+        <h2 class="card-title-cover bg-2 text-light">
+          <div class="card-title">Licence</div>
+          <div class="card-subtitle">帰属</div>
+          <div class="card-title-line"></div>
+        </h2>
+        <div class="card-contents">
+          <ul>
+            <li>
+              HTML5 Logo by
+              <span
+                ><a href="https://www.w3.org/"
+                  ><abbr title="World Wide Web Consortium">W3C</abbr></a
+                ></span
+              >
+            </li>
+            <li>
+              <span
+                >Node.js<sup>&reg;</sup> Logo by
+                <a href="https://nodejs.org/">OpenJS Foundation</a>
+              </span>
+            </li>
+            <li>
+              <span
+                >PHP Logo by
+                <a href="https://www.php.net/credits.php">PHP Group</a></span
+              >
+            </li>
+            <li>
+              <span
+                >写真AC
+                <a href="https://www.photo-ac.com/main/genface">
+                  AI人物素材（ベータ版）
+                </a>
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
 
       <div style="height: 40px"></div>
 
@@ -29,5 +531,38 @@
         <!-- &copy == ©︎Maru's web page -->
       </footer>
     </div>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-area", {
+        direction: "horizontal", //verticalは縦の動き
+        spaceBetween: 3,
+        autoplay: { delay: 10 * 1000, disableOnInteraction: false },
+        loop: true, //trueで永遠に回る
+        pagination: { el: ".swiper-pagination" },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      var TOP_BAR_OFFSET = 48;
+      function scoller(query) {
+        var elements = document.querySelectorAll(query);
+        if (elements.length == 0) {
+          console.error(
+            "Selected query:",
+            query,
+            "are not found on this page."
+          );
+          return;
+        }
+        var rect = elements[0].getBoundingClientRect();
+        window.scrollTo({
+          top: rect.top + window.pageYOffset - TOP_BAR_OFFSET,
+          behavior: "smooth",
+        });
+      }
+    </script>
   </body>
 </html>
